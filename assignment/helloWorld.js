@@ -14,6 +14,6 @@ function hideIt(event) {
       function good() {
         document.getElementById("hiddenGood").style.visibility = "visible";
       }
-    
+    console.log("Hello World!");
 
  
