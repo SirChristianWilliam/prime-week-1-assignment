@@ -6,7 +6,7 @@ function hideIt(event) {
         return notGood();
       }
       }
-
+ 
       function notGood() {
         document.getElementById("hiddenBad").style.visibility = "visible";
       }
