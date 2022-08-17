@@ -1,9 +1,11 @@
 /* Give your page a fun background color */
-* {box-sizing:border-box;overflow:hidden;
+* {box-sizing:border-box;
     margin-left:0px;margin-right:0px;}
 body,html {
     background-image: linear-gradient(rgba(100,150,33,1),rgba(44,92,189,1));height:100%;
      cursor:default;
+     overflow:scroll;
+
 
 }
 /* Make the header and footer a different color from the background */
@@ -13,27 +15,29 @@ background-color:darksalmon;
 header {
     text-indent: 10px;
     box-sizing: border-box;
-    overflow: hidden;
     margin:0px;
     font-family:sans-serif;
     text-decoration:underline;
     text-align: center;
      border-bottom:3px solid black;
+    width:100%;
+    position:sticky;
+    top:0;
+    padding:5px;
+    z-index:1;
 
-
-    
-    
-
+ 
 }
-footer {
+ footer {
     box-sizing: border-box;
     overflow: hidden;
     text-align: center;
     font-weight: bold;
     padding:20px;
-    position:fixed;
+    position:sticky;
     bottom:0;
     width:100%;
+    
 
 }
 img {
@@ -43,9 +47,11 @@ img {
 }
 h2 {
     margin-left:15px;
+    z-index:-1;
 }
 h3 {
     text-indent:10px;
+    text-decoration:overline;
 }
 li {
     font-style: italic;
@@ -53,7 +59,11 @@ li {
 }
 ul,li {
     word-wrap: break-word;
-}
+    list-style-type: disc;
+    text-shadow: 0px 0px 13px cyan;
+ 
+   }
+  
 /* Align the h1 containing your name in the center of the header*/
 
 /* Make your p tag a different color and italic */
@@ -66,10 +76,10 @@ ul,li {
 @media only screen and (max-width:700px) {
     footer {
         padding:0px;
-    }
+     }
     ul {
         margin-right:50px;
-    }
+     }
     h2{
         margin-left:60px;
         transform:rotate(3deg)
@@ -78,6 +88,10 @@ ul,li {
         border-radius:0px 0px 50% 50%;
 
     }
+    ::marker {
+        color:yellowgreen;
+        font-size: 15px !important;
+       }
   }
    
 
@@ -98,7 +112,7 @@ ul,li {
         box-shadow:0px 0px 15px white;
     }
     50% {
-        box-shadow:0px 0px 25px black;
+        box-shadow:0px 0px 35px black;
     }
     100% {
         box-shadow:0px 0px 15px white;
@@ -128,6 +142,13 @@ ul,li {
     border:2px solid white;
 
   }
+  h1 {
+    cursor: pointer;
+  }
+  h1:hover {
+    font-style: italic;
+  }
+  
   h4 { 
     visibility:hidden;
     position:fixed;
@@ -146,4 +167,8 @@ ul,li {
   
     color:cyan;
     text-shadow:0px 0px 5px magenta;
+   }
+   ::marker {
+    color:yellowgreen;
+    font-size: 25px;
    }
