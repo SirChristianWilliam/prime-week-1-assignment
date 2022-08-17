@@ -1,21 +1,45 @@
 # Type your responses on a new line
 
 # 1 - What is the command for listing the files in the current folder (directory)?
+ Ls
 
 # 2 - What is the command for changing directories?
+Cd (targeted directory)/
 
 # 3 - What is the command for going "up" a folder (to a parent directory)?
+Cd ..
 
 # 4 - What is a quick way to create a new folder?
+Mkdir (new folder name)
 
 # 5 - What output would you expect when you run the command 'ls' in an empty folder? What about a folder containing files?
 
+mymac@Chriss-MacBook-Pro brand % is the output I expect when in an empty folder. Essentially, no content.
+
+Using ls for a folder containing files, I would see the names of those files listed.
+
 # 6 - What is a quick way to create a new file?
+
+Touch (followed by the name of the file I wish to add).
 
 # 7 - Run 'git --version' in your terminal. What is the output?
 
+git version 2.15.0
+
 # 8 - Why would you run the command 'git status'?
+
+So, if you make a change in your editor to your files, Git doesn't know that. In order for it to know, you have to add them to the staging area. It's essentially a way to "save" your current edits.
+Git status command is a visual representation to know if you have staged/saved your progress and to get it ready for a commit. 
+Also, it will allow you to detect errors I found out as I had tried adding a picture but it kept saying there was an error. When I tried committing it, it kept saying the item was deleted. I figured it out eventually but the git status message was nice to show me that I still needed to fix it. 
 
 # 9 - What does the command 'git add .' do?
 
+As I touched on before, git add . Takes the work you have manipulated In your editor and moves it to the staging area, and is ready for commit. If you do not do this, and try committing, it will not reflect the work you just did.
+Turns status from red to green.
+
 # 10 - What is the command to push your committed changes to your repo on GitHub?
+
+
+Git commit -m "(Description of changes for notation and organization purposes)", and then
+Git push origin main is used to push the committed changes to my repo on GitHub.
+
