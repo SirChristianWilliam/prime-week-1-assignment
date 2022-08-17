@@ -6,19 +6,21 @@
     <!-- Change the <title> from "Page Title" to "Hello World" -->
     <title>Hello World!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="helloWorld.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
-<body>
+<body onload="myFunction()">
     <!-- Create a header element  -->
 
     <!-- Inside the header, add an <h1> element containing your name -->
     <header>
-        <h1>Chris Maki</h1>
+        <h1>Christian W Maki</h1>
     </header>
+    <h2> Here is an "IRL" photo of me: </h2>
     <!-- Include an image -->
      <img src="cat.jpeg" alt="cat with shades on" width="400" height="400">
      <!-- Create an unordered list with 3 list items of fun facts about you -->
+     <button onclick ="buttonclick()" onmouseup="hideIt()" id="btn"> Click me!</button>
      <h3>Three fun facts about me:</h3>
    <ul>
     <li>
@@ -34,5 +36,23 @@
     <!-- Create a footer element -->
 
     <!-- Inside your footer, put a <p> element with your favorite quote -->
+        <footer>
+    <p>
+        <i>"The man who removes the mountain begins by carrying away small stones."
+
+- Chinese proverb.</i>
+    </p>
+        </footer>
+    <h4 id = "hiddenBad"> That is bad. :( </h4>
+    <h4 id = "hiddenGood"> That is GOOD! :)</h4>
+        <script>
+         function myFunction() {
+            alert("Welcome!");
+            alert("Please feel free to resize my page to see how \
+it reacts, I would love criticism on how I could have \
+made it better!")
+         }
+
+        </script>
 </body>
 </html>

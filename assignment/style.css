@@ -1,7 +1,59 @@
 /* Give your page a fun background color */
+* {box-sizing:border-box;overflow:hidden;
+    margin-left:0px;margin-right:0px;}
+body,html {
+    background-image: linear-gradient(rgba(100,150,33,1),rgba(44,92,189,1));height:100%;
+     cursor:default;
 
+}
 /* Make the header and footer a different color from the background */
+header,footer {
+background-color:darksalmon;
+}
+header {
+    text-indent: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin:0px;
+    font-family:sans-serif;
+    text-decoration:underline;
+    text-align: center;
+     border-bottom:3px solid black;
 
+
+    
+    
+
+}
+footer {
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    padding:20px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+
+}
+img {
+    border:3px solid black;
+    box-shadow: 0px 0px 15px white;
+    margin-left:35px;
+}
+h2 {
+    margin-left:15px;
+}
+h3 {
+    text-indent:10px;
+}
+li {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul,li {
+    word-wrap: break-word;
+}
 /* Align the h1 containing your name in the center of the header*/
 
 /* Make your p tag a different color and italic */
@@ -9,3 +61,89 @@
 /* Put a border around your image */
 
 /* Change the font-family of your list */
+/* Did these last four in the above lines :) */
+
+@media only screen and (max-width:700px) {
+    footer {
+        padding:0px;
+    }
+    ul {
+        margin-right:50px;
+    }
+    h2{
+        margin-left:60px;
+        transform:rotate(3deg)
+    }
+    header {
+        border-radius:0px 0px 50% 50%;
+
+    }
+  }
+   
+
+  header:hover,footer:hover {
+    background-color:rgb(230, 141, 111);
+  }
+  img:hover {
+    animation-name:glow;
+    animation-iteration-count:infinite;
+    animation-duration:3s;
+    animation-play-state:running;
+    animation-timing-function:ease-in;
+    cursor: wait;
+
+  }
+  @keyframes glow {
+    0% {
+        box-shadow:0px 0px 15px white;
+    }
+    50% {
+        box-shadow:0px 0px 25px black;
+    }
+    100% {
+        box-shadow:0px 0px 15px white;
+    }
+  }
+  button {
+    float:right;
+    width:100px;
+    margin-right:10px;
+    padding:10px 10px;
+    cursor:pointer;
+    border:2px solid black;
+    border-radius:15px;
+    font-size:15px;
+  }
+  button:hover {
+    box-shadow:0px 0px 3px black;
+    text-shadow:0px 0px 2px black,0px 0px 5px white;;
+    background-color:lightyellow;
+
+  }
+  button:active {
+    color:red;
+    text-shadow:0px 0px 0px black;
+    background-color:black;
+    color:white;
+    border:2px solid white;
+
+  }
+  h4 { 
+    visibility:hidden;
+    position:fixed;
+    left:100px;
+    top:50%;
+    transform:translate(-50px,-50px) rotate(-5deg);
+    font-size:50px;
+    width:400px;
+
+  }
+  #hiddenBad {
+    color:red;
+    text-shadow:0px 0px 5px yellow;
+   }
+  #hiddenGood {
+  
+    color:cyan;
+    text-shadow:0px 0px 5px magenta;
+   }
